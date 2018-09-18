@@ -1,0 +1,145 @@
+dbgstr
+	C:\5thMix\work.5th\dbgstr\CTRL.C
+	C:\5thMix\work.5th\dbgstr\EVENT.C
+	C:\5thMix\work.5th\dbgstr\FSCD.C
+	C:\5thMix\work.5th\dbgstr\GM_NOTE.C
+	C:\5thMix\work.5th\dbgstr\OBJMAIN.C
+	C:\5thMix\work.5th\dbgstr\SRNDRAW.C
+	C:\5thMix\work.5th\dbgstr\SRNLOAD.C
+	C:\5thMix\work.5th\dbgstr\SRNMAIN.C
+	C:\5thMix\work.5th\dbgstr\TOOL.C
+----------------------------------------------------------------------
+dbgstr_m
+	C:\5thMix\work.5th\dbgstr\CTRL.C
+	C:\5thMix\work.5th\dbgstr\EVENT.C
+	C:\5thMix\work.5th\dbgstr\FSCD.C
+	C:\5thMix\work.5th\dbgstr\GM_NOTE.C
+	C:\5thMix\work.5th\dbgstr\OBJMAIN.C
+	C:\5thMix\work.5th\dbgstr\SRNDRAW.C
+	C:\5thMix\work.5th\dbgstr\SRNLOAD.C
+	C:\5thMix\work.5th\dbgstr\SRNMAIN.C
+	C:\5thMix\work.5th\dbgstr\TOOL.C
+----------------------------------------------------------------------
+libbm
+	C:\5thMix\work.5th\libbm\STORY.C
+	C:\5thMix\work.5th\libbm\NAME.C
+	C:\5thMix\work.5th\libbm\RESULT.C
+	C:\5thMix\work.5th\libbm\DJLEVEL.C
+	C:\5thMix\work.5th\libbm\OPTION.C
+	C:\5thMix\work.5th\libbm\HIGH.C
+	C:\5thMix\work.5th\libbm\GAGE.C
+	C:\5thMix\work.5th\libbm\JLOGO.C
+	C:\5thMix\work.5th\libbm\BMPAD.C
+	C:\5thMix\work.5th\libbm\BMPAD_A.C
+	C:\5thMix\work.5th\libbm\ISIN.C
+	C:\5thMix\work.5th\libbm\OPTSEL.C
+	C:\5thMix\work.5th\libbm\TITLE.C
+	C:\5thMix\work.5th\libbm\TRANING.C
+	C:\5thMix\work.5th\libbm\DEMO.C
+	C:\5thMix\work.5th\libbm\ENDING.C
+----------------------------------------------------------------------
+libdm
+	E:\bm\work\miya\DMMAIN.C
+----------------------------------------------------------------------
+libfs
+	C:\5thMix\work.5th\libfs\FSMAIN.C
+	C:\5thMix\work.5th\libfs\FSHD.C
+	C:\5thMix\work.5th\libfs\FSCD.C
+	C:\5thMix\work.5th\libfs\MOVIESYS.C
+----------------------------------------------------------------------
+libmc
+	C:\5thMix\work.5th\libmc\MCARD.C
+	C:\5thMix\work.5th\libmc\BM_CARD.C
+----------------------------------------------------------------------
+libobj
+	E:\bm\work\libobj\OBJTXT.C
+	E:\bm\work\libobj\OBJMAIN.C
+----------------------------------------------------------------------
+libsrn
+	C:\5thMix\work.5th\libsrn\SRNLOAD.C
+	C:\5thMix\work.5th\libsrn\SRNMAIN.C
+	C:\5thMix\work.5th\libsrn\SRNDRAW.C
+	C:\5thMix\work.5th\libsrn\OBJTXT.C
+	C:\5thMix\work.5th\libsrn\OBJMAIN.C
+	C:\5thMix\work.5th\libsrn\DISPINIT.C
+	C:\5thMix\work.5th\libsrn\DISPINT.C
+	C:\5thMix\work.5th\libsrn\DISPSUB.C
+	C:\5thMix\work.5th\libsrn\LIBCOLOR.C
+	C:\5thMix\work.5th\libsrn\BZERO.C
+----------------------------------------------------------------------
+miya
+	E:\bm\work\miya\MIYA_S1.C
+----------------------------------------------------------------------
+mts
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_NEW.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_SUB.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_PAD.C
+----------------------------------------------------------------------
+mts_dbg
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\nmts\MTS_NEW.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_SUB.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_PAD.C
+----------------------------------------------------------------------
+mtscd
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_NEW.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_SUB.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_PAD.C
+----------------------------------------------------------------------
+mtsmcd
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_NEW.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_SUB.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\nmts\MTS_PAD.C
+----------------------------------------------------------------------
+nolibsio
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\libsio\DUMMY.C
+----------------------------------------------------------------------
+sio
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\libsio\PRINT.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\libsio\ISIO.C
+	D:\home\nomura-t\BM_Work\4thMix\lib_work\libsio\FS.C
+----------------------------------------------------------------------
+sound
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_MAIN.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_CLI.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_EXT.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_INCL.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_DEBUG.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\INCLUDE\TASKID.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\INCLUDE\MTS.H
+	C:\PSX\INCLUDE\LIBSPU.H
+	C:\PSX\INCLUDE\LIBETC.H
+	C:\PSX\INCLUDE\LIBCD.H
+	C:\PSX\INCLUDE\SYS\TYPES.H
+	C:\PSX\INCLUDE\KERNEL.H
+	C:\PSX\INCLUDE\ASM.H
+	C:\PSX\INCLUDE\R3000.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_STR.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_DRV.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\G_SOUND.H
+	C:\PSX\INCLUDE\LIBGTE.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_IOSET.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SE_TBL.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SE_DATA\WV7F12.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SE_DATA\WV7F11.H
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_CLI.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_WK.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_SUB1.C
+	D:\home\nomura-t\BM_Work\5thMix\lib_work\sound\SD_SUB2.C
+----------------------------------------------------------------------
+tan
+	C:\5thMix\work.5th\tan\C_WORK.C
+	C:\5thMix\work.5th\tan\CTRL_SUV.C
+	C:\5thMix\work.5th\tan\CTRL_FRE.C
+	C:\5thMix\work.5th\tan\CTRL_EXP.C
+	C:\5thMix\work.5th\tan\CTRL.C
+	C:\5thMix\work.5th\tan\CTRL_SUB.C
+	C:\5thMix\work.5th\tan\SCENE.C
+	C:\5thMix\work.5th\tan\GM_NOTE.C
+	C:\5thMix\work.5th\tan\GM_GAME.C
+	C:\5thMix\work.5th\tan\EVENT.C
+	C:\5thMix\work.5th\tan\STGDAT.C
+	C:\5thMix\work.5th\tan\TOOL.C
+	C:\5thMix\work.5th\tan\IR_MODE.C
+	C:\5thMix\work.5th\tan\IR_ERR.C
+	C:\5thMix\work.5th\tan\MCHDATA.C
+	C:\5thMix\work.5th\tan\JUDGE.C

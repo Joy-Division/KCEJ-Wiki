@@ -1,0 +1,35 @@
+				"Head for the goal without being seen by enemy soldiers!" \
+#				'「ダンボール」' \
+#				'敵兵に見つからないようゴールを目指せ！' \
+				-p OPENING_2_VK -c 1
+		} else if ( $b:ＶＲ言語フラグ == d:ドイツ語 ) {
+			chara ＶＲウィンドウ vwin0 -w 32 53 232 118 -m 16 17 240 101 -f \ 
+				-i 6 -b \
+				'NG SELECTION' \
+				'LEVEL  03' \
+				'' \ 
+				'“Karton”' \
+				"Von den Feinden unbemerkt zum" \
+				"Ziel vordringen." \
+#				'「ダンボール」' \
+#				'敵兵に見つからないようゴールを目指せ！' \
+				-p OPENING_2_VK -c 1
+		} else if ( $b:ＶＲ言語フラグ == d:フランス語 ) {
+			chara ＶＲウィンドウ vwin0 -w 32 53 216 118 -m 16 17 240 101 -f \ 
+				-i 5 -b \
+				'NG SELECTION' \
+				'LEVEL  03' \
+				'' \ 
+				"[Bo&^ite en Carton]" \
+				"Ne vous faites pas rep&'erer." \
+#				'「ダンボール」' \
+#				'敵兵に見つからないようゴールを目指せ！' \
+				-p OPENING_2_VK -c 1
+		} else if ( $b:ＶＲ言語フラグ == d:イタリア語 ) {
+			chara ＶＲウィンドウ vwin0 -w 32 53 256 118 -m 16 17 240 101 -f \ 
+				-i 6 -b \
+				'NG SELECTION' \
+				'LEVEL  03' \
+				'' \ 
+				'“Scatola di cartone”' \
+				"Punta alla

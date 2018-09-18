@@ -1,0 +1,44 @@
+==[NUL]~[NUL]================^&
+#		 サブカメラはset0～set7まで。番号の大きいほうが優先さ
+#		 れる。ビハインドは3番なので、3番は使っては行けない。
+#		 3番以外は重複してもかまわない。
+#		 どのサブカメラにも入っていない場合はメインカメラにな
+#		 る。
+
+#------------------ 俯瞰視点(SPECIAL MODE SERIES F)^
+
+proc AGL_FUKAN_VF {
+	camera \
+		bound -30000,-30000,-30000 30000,30000,1500 \
+		limit -30000,-30000,-30000 30000,30000,1000 \
+		rot 	700,2048,0 \
+		track 4500 
+}
+
+
+#------------------ 最初の視点設定(SPECIAL MODE SERIES F)^
+
+proc AGL_FIRST_VF {
+#pos -3362 1759 4936
+#trg -2475 770 6672
+#rot 306 308 0
+	camera  set 4  d:CAM_FIX d:CAM_INTERP_LINER d:CAM_CAM_TO_TRG \
+			-3362,1759,4936 -2475,770,6672 1
+}
+
+
+#------------------ ステージ全体表示の視点設定(SPECIAL MODE SERIES F)^
+
+proc AGL_ZENTAI_VF {
+#pos -2500 7168 7075
+#trg -2500 999 6621
+#rot 976 2048 0
+	camera  set 5  d:CAM_FIX d:CAM_INTERP_LINER d:CAM_CAM_TO_TRG \
+			-2500,7168,7075 -2500,999,6621
+}
+
+
+#------------------ ゴール時の視点設定(SPECIAL MODE SERIES F)^
+
+proc AGL_STAGECLR_VF {
+	camera  set 7  d:CAM_FIX d:CAM_INTERP_LINER d:CAM_CAM_TO_TRG \

@@ -1,0 +1,19 @@
+.nocache
+.resident
+.slot weapons 5 409600
+.endslot
+.slot cbox 1 53248
+.endslot
+.slot book 3 43008
+.endslot
+.slot net_sol_mdls 1 122880
+.endslot
+.slot net_sol_sep 1 88064
+.endslot
+.slot lang_la_resident 1 282624
+.endslot
+@resident.qar
+resident.dar
+.cache
+scenerio.gcx
+r_main01.rlc

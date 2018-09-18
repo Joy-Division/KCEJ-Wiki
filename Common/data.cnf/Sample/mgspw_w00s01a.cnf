@@ -1,0 +1,13 @@
+.nocache
+.cache
+.slot dynamic_map_w00s01a 1 208896
+.endslot
+.slot lang_re_w00s01a 1 88064
+.endslot
+.vram w00s01a.vrd w00s01a.vram
+@cache.qar
+cache.dar
+w00s01a.nav
+w00s01a.geom
+scenerio.gcx
+w00s01a.rlc

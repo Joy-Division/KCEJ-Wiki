@@ -1,0 +1,40 @@
+.nocache
+.resident
+.slot slot_online_head 16 1179648
+.endslot
+.slot slot_online_chest 16 2031616
+.endslot
+.slot slot_online_waist 16 917504
+.endslot
+.slot slot_online_hand 16 1245184
+.endslot
+.slot slot_online_foot 16 1310720
+.endslot
+.slot slot_online_etc 32 2162688
+.endslot
+.slot slot_online_facepaint 16 65536
+.endslot
+.slot slot_online_upper_color 16 65536
+.endslot
+.slot slot_online_head_color 16 65536
+.endslot
+.slot slot_online_chest_color 16 65536
+.endslot
+.slot slot_online_waist_color 16 65536
+.endslot
+.slot slot_online_foot_color 16 65536
+.endslot
+.slot slot_online_unique 2 4526080
+.endslot
+.slot slot_oct_list_online 2 16384
+.endslot
+@resident.qar
+resident.dar
+.delayload_w
+resident.dlz
+resident_nodld.dlz
+.delayload
+resident_d.dlz
+.cache
+.cache
+scenerio.gcx

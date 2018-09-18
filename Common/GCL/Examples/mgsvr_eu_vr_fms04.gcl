@@ -1,0 +1,28 @@
+( [NUL]~[NUL]\
+				-d $f:リプレイフラグ \
+				-s $w:ＶＲステージ $b:モードフラグ \
+					-t t:vc900069 t:vc900067 t:vc900068 t:vc900071
+		} else if ( $w:ＶＲステージ == d:VR素手2面 ) {
+			if ( $b:Ｓ素手進行度フラグ < 2 ) {
+				eval ( $b:Ｓ素手進行度フラグ = 2 )
+			}
+			chara ＶＲクリア clear -p 3 CLEAR_RESTART GO_ST_SUDE_03 CLEAR_EXIT \
+				-d $f:リプレイフラグ \
+				-s $w:ＶＲステージ $b:モードフラグ \
+					-t t:vc900069 t:vc900067 t:vc900068 t:vc900071
+		} else if ( $w:ＶＲステージ == d:VR素手3面 ) {
+			if ( $b:Ｓ素手進行度フラグ < 3 ) {
+				eval ( $b:Ｓ素手進行度フラグ = 3 )
+			}
+			chara ＶＲクリア clear -p 3 CLEAR_RESTART GO_ST_SUDE_04 CLEAR_EXIT \
+				-d $f:リプレイフラグ \
+				-s $w:ＶＲステージ $b:モードフラグ \
+					-t t:vc900069 t:vc900067 t:vc900068 t:vc900071
+		} else if ( $w:ＶＲステージ == d:VR素手4面 ) {
+			if ( $b:Ｓ素手進行度フラグ < 4 ) {
+				eval ( $b:Ｓ素手進行度フラグ = 4 )
+			}
+			chara ＶＲクリア clear -p 3 CLEAR_RESTART GO_ST_SUDE_05 CLEAR_EXIT \
+				-d $f:リプレイフラグ \
+				-s $w:ＶＲステージ $b:モードフラグ \
+					-t t:vc90006 t:vc900067 t:vc900068 t:vc900071

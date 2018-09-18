@@ -1,0 +1,10 @@
+chara ドア DoorA1 \
+	-kms std_door \
+	-position 9325,0,-5050 \
+	-rotate 0,2048,0
+
+trap DoorA1_Area スネーク \
+	-mask 入る \
+	-exec {
+		mesg ドア DoorA1 open
+	}

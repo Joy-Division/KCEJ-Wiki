@@ -1,0 +1,46 @@
+/******************************************************************************************/
+proc ライト設定 {
+	#if d:vardef::DEBUG_PRINT
+		print '*** Light setting *** @ライト設定';
+	#endif
+
+	command フォグ設定 \
+//		-near	-5000			\	//command フォグ設定
+//		-far	170000			\	//command フォグ設定
+//		-light	0 337			\	//command フォグ設定
+//		-rgb	188 635 811		\	//command フォグ設定
+//		-before_near 1000 \
+//		-before_far 100000 \
+//		-before_rbg 1000 1000 784 \
+//		-before_limit 0 500
+		-rgb 290 376 313	\	//command フォグ設定
+		-near -15000		\	//command フォグ設定
+		-far 324700			\	//command フォグ設定
+		-limit 0 392			//command フォグ設定
+
+	command ライト設定 \
+//		-dir				-1016 -2377 -4279	\	// command ライト設定
+//		-color				1388 372 0		\	// command ライト設定
+//		-chara_color			2870 372 0		\	// command ライト設定
+//		-hemispherelight_dir		609 -4921 641		\	// command ライト設定
+//		-hemispherelight_frontcolor	149 227 188 784		\	// command ライト設定
+//		-hemispherelight_backcolor	15 74 94 784			// command ライト設定
+		-dir -1668 -2356 -4082					\	// command ライト設定
+		-color 1803 1803 1803					\	// command ライト設定
+		-chara_color 815 815 815				\	// command ライト設定
+		-hemispherelight_dir 609 -4921 641			\	// command ライト設定
+		-hemispherelight_frontcolor 86 86 86 1372	\	// command ライト設定
+		-hemispherelight_backcolor 62 62 62 1176			// command ライト設定
+}
+
+
+/******************************************************************************************/
+//	Proc name	: エフェクト設定
+//	In value	:
+//				:
+//	Out value	:
+//
+/******************************************************************************************/
+//	How to USE	:
+//				:
+/******************************************************************************************/

@@ -1,0 +1,27 @@
+.nocache
+.resident
+.slot slot_sna_body 1 819200
+.endslot
+.slot slot_sna_face 1 286720
+.endslot
+.slot slot_book 1 18432
+.endslot
+.slot slot_weapon 5 2600960
+.endslot
+.slot slot_oct_list 2 16384
+.endslot
+.slot slot_cm_body 1 333824
+.endslot
+.slot slot_cm_tentacle 1 43008
+.endslot
+@resident.qar
+resident.dar
+resident.vfp
+.delayload_w
+resident.dlz
+resident_nodld.dlz
+.delayload
+resident_d.dlz
+.cache
+.cache
+scenerio.gcx

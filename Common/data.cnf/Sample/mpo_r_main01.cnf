@@ -1,0 +1,12 @@
+.nocache
+.resident
+.slot weapons 11 1081344
+.endslot
+.slot sol_mdls 1 419840
+.endslot
+@resident.qar
+resident.dar
+.cache
+minifont.fcx
+scenerio.gcx
+r_main01.rlc
