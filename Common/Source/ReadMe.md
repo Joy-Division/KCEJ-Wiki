@@ -23,7 +23,7 @@ KCE Japan, like anyway software studio, had their own style, practices, and quir
 KCE Japan seemingly did not enforce a very strict coding standard. Certain styles are preferred over others but they are not kept entirely consistent throughout a given codebase.
 
 The following are examples of things not kept consistent:
-- Indentation alternates between tabs and spaces. In addition, the indended tab display width between was not kept consistent between source files either.
+- Indentation alternates between tabs and spaces. In addition, the indended tab display width was not kept consistent between source files either.
 - Line breaks alternate between Unix ``LF`` and Microsoft ``CRLF``.
 - Japanese character encoding alternates between Shift-JIS and EUC-JP.
   - **Note:** This can be observed in the fragments of source code found with the various versions of *Metal Gear Solid*, however, the use of EUC-JP for any string that needed to be hashed or otherwise directly used by the game (i.e. not simply a comment in the C/GCL code) was mandatory for the sake of compatibility.
@@ -141,13 +141,11 @@ The user-level module primarily deals with implementing actors and other game-sp
 
 ## Source Tree
 
-Aside from the structure of the actual program, each project's source tree followed a set of practices KCE Japan's programmers had established at some point.
+Aside from the structure of the actual program, each project's source tree is patterned after a common model KCE Japan's programmers had established at some point. *Metal Gear Solid* is the first game with enough information retained throughout its various builds for these practices to be known and documented.
 
-*Metal Gear Solid* is the first game with enough information retained throughout its various builds for these practices to be known and documented.
+The codebase for each project is split between two main directories: ``source``, which contains the vast majority of the game's code, and ``module`` which is where the MTS, sound, and third-party libraries reside. Each directory has a pair of subdirectories named ``include`` and ``lib`` which contain common headers and library archives respectively. ``source`` also includes a subdirectory named ``main`` which often containes a single source file that defines the program entry point (the ``main()`` function).
 
-The codebase for each project is split between two main directories: ``source``, which contains the vast majority of the game's code, and ``module`` which is where the MTS, sound, and third-party libraries reside. Each directory has a pair of subdirectories named ``include`` and ``lib`` which contain common header and library archives respectively. ``source`` also includes a subdirectory named ``main`` which often containes a single source file and defines the program entry point (the ``main()`` function).
-
-User-level code is sorted into directories named after the programmer assigned to it. This is a common practice for Japanese game developers across the industry and can be seen in the codebases of various non-Konami games such as Grasshopper Manufacture's *Killer7* and SCE Japan Studio's *ICO*.
+User-level code is sorted into directories named after the programmer assigned to implement it. This is a common practice for Japanese game developers across the industry and can be seen in the codebases of various non-Konami games such as Grasshopper Manufacture's *Killer7* and SCE Japan Studio's *ICO*.
 
 There are two directory structures for ``source`` different games follow. The first can be observed in *Metal Gear Solid*, *beatmania APPEND 5thMix*, and *Zone of the Enders*.
 
