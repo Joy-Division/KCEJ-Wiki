@@ -1,0 +1,2 @@
+d:\WORKS\D020801\Win\mgs2x\release\mgs2.pdb
+d:\WORKS\D020801\Win\mgs2x\release_sse\mgs2_sse.pdb

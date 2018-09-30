@@ -1,0 +1,33 @@
+d:/mgs/src0226/onoda/jpeg/jpegcam.dat
+----------------------------------------------------------------------
+C:\link\source\okajima\CHAFGRND.C
+C:\link\source\takabe\jeep_liq\D_ACTION.C
+C:\link\source\takabe\jeep_liq\JLQ_ACT.C
+C:\link\source\takabe\jeep_liq\JLQ_ACT.C
+D:\link\source\animal\zako11e\ZK11EACT.C
+D:\link\source\takabe\jeep_emy\JGETHIN			// fragment, "D:\link\source" was missing, no end
+D:\link\source\takabe\PAPER.C
+D:\mgs_tai\source\animal\meryl72\ACTION.C
+D:\mgs_tai\source\animal\meryl72\MLA			// fragment, no end
+D:\mgs_tai\source\animal\meryl72\MLACT72.C
+D:\mgs_tai\source\animal\meryl72\OVERRIDE.C
+D:\mgs_tai\source\animal\meryl72\PUT.C
+D:\mgs_tai\source\koba\vr\VROVER.C
+D:\mgs_tai\source\takabe\GOGGLE.C
+D:\mgs_taip\source\okajima\SCN_BOMB.C
+D:\mgs_taip\source\onoda\brf\B_EFF_A.C
+D:\mgs_taip\source\onoda\brf\B_EFF_B.C
+D:\mgs_taip\source\onoda\brf\B_EFF_I.C
+D:\mgs_taip\source\onoda\brf\B_EFF_R.C
+D:\mgs_taip\source\onoda\brf\B_EFF_Z.C
+D:\mgs_taip\source\onoda\brf\B_GRAPH.C
+D:\mgs_taip\source\onoda\brf\B_P_00.C
+D:\mgs_taip\source\onoda\brf\B_P_01.C
+D:\mgs_taip\source\onoda\brf\B_P_02.C
+D:\mgs_taip\source\onoda\brf\B_PROC.C
+D:\mgs_taip\source\onoda\preope\PRE
+D:\mgs_taip\source\onoda\preope\PRE_JI2.C
+D:\mgs_taip\source\onoda\preope\PRE_MET2.C
+D:\mgs_taip\source\takabe\GLASS.C
+D:\mgs_taip\source\takabe\TELOP.C
+D:\mgs_usa\source\koba\vr\VRCLEAR3.C

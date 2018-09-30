@@ -1,0 +1,2 @@
+e:\mga\ja\soft\src\system\mgo\mgo_app\test\mga\source\user\asai\etc\../util/etc/actor_class.h
+e:\mga\ja\soft\src\system\mgo\mgo_app\test\mga\source\user\kunibe\netplayer\npc\battle_field../pl_npc_stage_data.h

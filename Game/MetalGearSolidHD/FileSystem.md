@@ -81,7 +81,7 @@ Each region/language has its own set of these subdirectories, though since the E
 
 [data.cnf](../../Common/data.cnf/ReadMe.md) files have not been recreated but instead Bluepoint has devised a new system for referring to assets using text files.
 
-| Directory | Contents |
+| File | Contents |
 | ----- | ----- |
 | bp_streams.txt | Refers to stream data |
 | bp_assets.txt | Refers to CMDL/CTXR files |

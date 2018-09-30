@@ -8,7 +8,7 @@ This project serves as a technical information resource for games developed by K
 
 - [Game Command Language](Common/GCL/ReadMe.md)
 
-- KCE Japan Coding Conventions
+- [KCE Japan Programming Conventions](Common/Source/ReadMe.md)
 
 ## Games
 
