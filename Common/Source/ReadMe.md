@@ -193,12 +193,12 @@ mgs
     ├─lib
     ├─main
     ├─system
-    ├─libdg
-    ├─libfs
-    ├─libgcl
-    ├─libgv
-    ├─libhzd
-    ├─libmt
+    │  ├─libdg
+    │  ├─libfs
+    │  ├─libgcl
+    │  ├─libgv
+    │  ├─libhzd
+    │  └─libmt
     └─user
         ├─korekado
         ├─okajima
