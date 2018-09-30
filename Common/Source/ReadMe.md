@@ -20,7 +20,7 @@ KCE Japan, like anyway software studio, had their own style, practices, and quir
 
 ## Style
 
-KCE Japan seemingly did not enforce a very strict coding standard. Certain styles are preferred over others but they are not kept entirely consistent throughout the entire codebase.
+KCE Japan seemingly did not enforce a very strict coding standard. Certain styles are preferred over others but they are not kept entirely consistent throughout a given codebase.
 
 The following are examples of things not kept consistent:
 - Indentation alternates between tabs and spaces. In addition, the indended tab display width between was not kept consistent between source files either.
@@ -31,14 +31,14 @@ The following are examples of things not kept consistent:
 
 ### Identifier Naming
 
-Outside of these issues, KCE Japan's programmers typically followed a common style, albeit with several breaks found throughout each codebase.
+Despite not being strictly enforced, KCE Japan's programmers did indeed follow a common style, albeit with several breaks found throughout each codebase.
 
 The following are the most notable patterns which are *mostly* kept consistent:
 - Local variable and structure names are written in ``snake_case``.
-- Global variables and structures names are written in ``PascalCase``.
+- Global variable and structure names are written in ``PascalCase``.
 - Structure type names, defines and enum members are written in ``ALL_CAPS``.
   - **Exception:** *beatmania APPEND 5thMix* uses the ``PascalCase_t`` as an alternate style for structure type names.
-- Functions names are either written in ``PascalCase`` or ``snake_case``, though most names use the former. Lower level system functions such as those belonging to the Multi-Task Scheduler use the latter.
+- Function names are either written in either ``PascalCase`` or ``snake_case``, though most names use the former. Lower level system functions such as those belonging to the Multi-Task Scheduler use the latter.
   - Function names typically include a verb or imply some sort of action which helps to distinguish them from globals.
   - Functions belonging to a certain library/actor/etc. are prefixed with its short name. (e.g. ``GCL_GetByte`` is a part of LibGCL.)
   - Functions responsible for creating a new object, actor, etc. often begin with the the word "New" (e.g. ``NewSoundTest``).
@@ -47,7 +47,7 @@ The following are the most notable patterns which are *mostly* kept consistent:
 
 ## Program Structure
 
-KCE Japan games are modeled on a common system structure established with the development of *Metal Gear Solid*. The system is built on top of a multitasking kernel/thread wrapper library known as the Multi-Task Scheduler (MTS). Most libraries, with the exception of those designed for generic tasks such as mathematic algorithms, initialize a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) process that servers as a part of the games' core system. For example, LibDG implements the DG daemon -- the process responsible for image rendering and display.
+KCE Japan games are modeled on a common system structure established with the development of *Metal Gear Solid*. The system is built on top of a multitasking kernel/thread wrapper library known as the Multi-Task Scheduler (MTS). Most libraries, with the exception of those designed for providing generic functions such as mathematic algorithms, initialize a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) process that servers as a part of the games' core system. For example, LibDG implements the DG daemon -- the process responsible for image rendering and display.
 
 The *Document of Metal Gear Solid 2* provides a description of this system under the "Program > System Structure" section.
 
@@ -153,53 +153,65 @@ There are two directory structures for ``source`` different games follow. The fi
 
 - Sample representation:
 ```
-source
-├─game
-├─include
-├─korekado
-├─lib
-├─libdg
-├─libfs
-├─libgcl
-├─libgv
-├─libhzd
-├─libmt
-├─main
-├─okajima
-├─sonoyama
-├─takabe
-└─uehara
-```
-
-A new directory structure was standardized with *Metal Gear Solid 2* onwards. Libraries and user-level code are now further sorted unto the new sudirectories ``system`` and ``user``.
-
-- Sample representation:
-```
-source
-├─game
-├─include
-├─lib
-├─main
-├─system
-│  ├─libdg
-│  ├─libfs
-│  ├─libgcl
-│  ├─libgv
-│  ├─libhzd
-│  └─libmt
-└─user
+mgs
+├─module
+│  ├─include
+│  ├─lib
+│  ├─mts
+│  └─sound
+└─source
+    ├─game
+    ├─include
     ├─korekado
+    ├─lib
+    ├─libdg
+    ├─libfs
+    ├─libgcl
+    ├─libgv
+    ├─libhzd
+    ├─libmt
+    ├─main
     ├─okajima
     ├─sonoyama
     ├─takabe
     └─uehara
 ```
 
+A new directory structure was standardized with *Metal Gear Solid 2* onwards. Libraries and user-level code are now further sorted unto the new sudirectories ``system`` and ``user``.
+
+- Sample representation:
+```
+mgs
+├─module
+│  ├─include
+│  ├─lib
+│  ├─mts
+│  └─sound
+└─source
+    ├─game
+    ├─include
+    ├─lib
+    ├─main
+    ├─system
+    ├─libdg
+    ├─libfs
+    ├─libgcl
+    ├─libgv
+    ├─libhzd
+    ├─libmt
+    └─user
+        ├─korekado
+        ├─okajima
+        ├─sonoyama
+        ├─takabe
+        └─uehara
+```
+
 ### cdrom.img
 
 A directory named ``cdrom.img`` should be located somewhere within a game's project directory. This serves as the host path for running builds of a game from a host machine's hard disk drive or other media during development.
 
-In the Windows port of *Metal Gear Solid 2: Substance* and *Metal Gear Arcade*, ``cdrom.img`` survived into the final builds of the games and serve as the root directory for game data.
+In the Windows port of *Metal Gear Solid 2: Substance* and *Metal Gear Arcade*, ``cdrom.img`` survived into the final builds of the games and serves as the root directory for game data.
 
 The earliest appearance of ``cdrom.img`` can be found within the PlayStation version of *Policenauts* in the file ``kernel.sc``.
 
@@ -217,7 +229,8 @@ The following lists are compilations of known source file paths that have been p
 - [Metal Gear Solid 3 HD Edition](path_mgs3hd.txt)
 - [Metal Gear Solid: Peace Walker HD Edition](path_mgspwhd.txt)
 - [Zone of the Enders HD Collection (Bootloader)](path_zoehd.txt)
-- [Anubis Zone of the Enders HD Edition](path_zoe2hd.txt)
+- [Anubis: Zone of the Enders HD Edition](path_zoe2hd.txt)
+- [Anubis: Zone of the Enders MARS](path_zoe2mars.txt)
 
 **Note:** *Anubis: Zone of the Enders* has been edited somewhat from the information originally found within the game for the sake of clarity and completeness.
 

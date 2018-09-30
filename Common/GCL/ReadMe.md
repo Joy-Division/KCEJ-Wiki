@@ -75,7 +75,7 @@ Here is an actual example.
 >The portion beginning with "trap" is what "sets an event". When "スネーク" (Snake) enters the area designated as "DoorA1_Area" by another tool, the execution block beginning with "exec" sends an "入る" (enter) order to the "ドア" (door) program called "DoorA1".
 >Other situations involve multiple "condition forks" that change what happens depending on the circumstance. The entire game is pretty much composed of combinations of these parts and event sets. It might be fun to play the game trying to guess what kind of script governs each item position, camera behavior, and individual event you experience.
 
-**Note:** Liberties have been taken with the transription so that the original, correct identifiers could be restored from the Japanese version of the following excerpt.
+**Note:** Liberties have been taken with the transription so that the original, correct identifiers could be restored from the Japanese version of this excerpt.
 
 ### Metal Gear Solid 4
 

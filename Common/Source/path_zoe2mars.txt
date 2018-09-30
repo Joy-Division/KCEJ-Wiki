@@ -1,0 +1,7 @@
+C:\Users\CF0728\Desktop\ZetWorks\Viewer\Tools\License\License\obj\Release\License.pdb
+C:\ZetWorks\jenkins\workspace\ZET_DEPLOY_PACKAGING_WIN\__intermediate\bin\x64\Final\Zoe2Mars.pdb
+C:\ZetWorks\Viewer\Tools\Launcher\Launcher\obj\Release\Launcher.pdb
+C:\ZetWorks\Viewer\ZoE2_Win\cdrom.img\sound\Windows\
+D:\_zasset\Zoey\Workingdata\Sound\Wwise_project\ZoE2\
+D:\_zasset\Zoey\Workingdata\Sound\Wwise_project\ZoE2\.cache\Windows\
+D:\_zasset\Zoey\Workingdata\Sound\Wwise_project\ZoE2\GeneratedSoundBanks\Windows
