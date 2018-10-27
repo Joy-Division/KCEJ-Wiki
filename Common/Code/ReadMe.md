@@ -18,7 +18,7 @@ KCE Japan West, like anyway software studio, had their own style, practices, and
   - [Known Source Files & Paths](#known-source-files--paths)
 - [Source Control](#source-control)
   - [CVS](#cvs)
-  - [StarTeam](#star-team)
+  - [StarTeam](#starteam)
 
 ## Style
 
