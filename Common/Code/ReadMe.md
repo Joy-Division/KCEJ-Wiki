@@ -1,12 +1,11 @@
-# KCE Japan Programming Conventions
+# KCE Japan West Coding Conventions
 
-KCE Japan, like anyway software studio, had their own style, practices, and quirks when it came to writing a game's code. Some of this information has even survived into the retail builds of their games, and is thus documented here.
-
-**Note:** This page focuses on coding patterns exhibited by KCE Japan West and likely cannot be applied to KCE Japan East.
+KCE Japan West, like anyway software studio, had their own style, practices, and quirks when it came to writing a game's code. Some of this information has survived into various retail, demo, and debug builds of their games.
 
 ## Table of Contents
 
 - [Style](#style)
+  - [Character Encoding](#character-encoding)
   - [Identifier Naming](#identifier-naming)
 - [Program Structure](#program-structure)
   - [Game](#game)
@@ -14,40 +13,47 @@ KCE Japan, like anyway software studio, had their own style, practices, and quir
   - [Kernel](#kernel)
   - [User](#user)
 - [Source Tree](#source-tree)
+  - [Library Archives](#library-archives)
   - [cdrom.img](#cdromimg)
   - [Known Source Files & Paths](#known-source-files--paths)
 - [Source Control](#source-control)
+  - [CVS](#cvs)
+  - [StarTeam](#star-team)
 
 ## Style
 
-KCE Japan seemingly did not enforce a very strict coding standard. Certain styles are preferred over others but they are not kept entirely consistent throughout a given codebase.
+KCE Japan West seemingly did not enforce a very strict coding standard. Certain styles prevail over others but they are not kept entirely consistent throughout a given codebase.
 
-The following are examples of things not kept consistent:
-- Indentation alternates between tabs and spaces. In addition, the indended tab display width was not kept consistent between source files either.
+The following are examples of varying style:
+- Indentation alternates between tabs and spaces. In addition, no intended tab display with seems to have been established, usually intended to appear either 4 or 8 characters in width.
 - Line breaks alternate between Unix ``LF`` and Microsoft ``CRLF``.
-- Japanese character encoding alternates between Shift-JIS and EUC-JP.
-  - **Note:** This can be observed in the fragments of source code found with the various versions of *Metal Gear Solid*, however, the use of EUC-JP for any string that needed to be hashed or otherwise directly used by the game (i.e. not simply a comment in the C/GCL code) was mandatory for the sake of compatibility.
 - In some places within *Metal Gear Solid's* codebase, K&R style argument declaration was used -- notably within certain inline function definitions for Game, LibDG, and LibGCL.
+
+### Character Encoding
+
+EUC-JP is the standard Japanese character encoding used in KCE Japan West's C/C++ and GCL code. The use of this encoding is mandatory for the sake of generating the same GCL identifier hashes throught the codebase.
+
+In places where a specific character encoding is not mandated, Shift-JIS is often used.
 
 ### Identifier Naming
 
-Despite not being strictly enforced, KCE Japan's programmers did indeed follow a common style, albeit with several breaks found throughout each codebase.
+Given that the coding standard was relatively lax, inconsistencies can be found in a given game's codebase. Still, certain styles tend to dominate.
 
-The following are the most notable patterns which are *mostly* kept consistent:
-- Local variable and structure names are written in ``snake_case``.
-- Global variable and structure names are written in ``PascalCase``.
-- Structure type names, defines and enum members are written in ``ALL_CAPS``.
-  - **Exception:** *beatmania APPEND 5thMix* uses the ``PascalCase_t`` as an alternate style for structure type names.
-- Function names are either written in either ``PascalCase`` or ``snake_case``, though most names use the former. Lower level system functions such as those belonging to the Multi-Task Scheduler use the latter.
-  - Function names typically include a verb or imply some sort of action which helps to distinguish them from globals.
+The following points are examples of the most common styles:
+- Local variable and structure names are often written in ``snake_case``.
+- Global variable and structure names are often written in ``PascalCase``.
+- Structure type names, defines and enum members are written in ``ALL_CAPS``, with ``PascaleCase`` serving as a secondary style.
+- Function names are either written in either ``PascalCase`` or ``snake_case`` with most preferring the former.
+  - Function names typically include a verb or imply some sort of action, helping to distinguish them from global variables.
   - Functions belonging to a certain library/actor/etc. are prefixed with its short name. (e.g. ``GCL_GetByte`` is a part of LibGCL.)
   - Functions responsible for creating a new object, actor, etc. often begin with the the word "New" (e.g. ``NewSoundTest``).
-- Source file and path names are written in ``snake_case``, with ``PascalCase`` used in its place when this practice is broken.
-  - The extension ``.cc`` is used for C++ code, with ``.h`` being used for both C and C++ headers.
+- Source file and path names are written in ``snake_case``, with ``PascaleCase`` serving as a secondary style.
+- The extension ``.cc`` is used for C++ code, with ``.h`` being used for both C and C++ headers.
+  - The more standard ``.cpp`` extension was adopted circa 2009 for the development of *Metal Gear Solid: Peace Walker* and the Fox Engine.
 
 ## Program Structure
 
-KCE Japan games are modeled on a common system structure established with the development of *Metal Gear Solid*. The system is built on top of a multitasking kernel/thread wrapper library known as the Multi-Task Scheduler (MTS). Most libraries, with the exception of those designed for providing generic functions such as mathematic algorithms, initialize a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) process that servers as a part of the games' core system. For example, LibDG implements the DG daemon -- the process responsible for image rendering and display.
+KCE Japan West games are modeled on a common system structure established with the development of *Metal Gear Solid*. The system is built on top of a multitasking kernel/thread wrapper library known as the Multi-Task Scheduler (MTS). Most libraries, with the exception of those designed for providing generic functions such as mathematic algorithms, initialize a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) process that servers as a part of the games' core system. For example, LibDG implements the DG daemon -- the process responsible for image rendering and display.
 
 The *Document of Metal Gear Solid 2* provides a description of this system under the "Program > System Structure" section.
 
@@ -114,7 +120,7 @@ Common libraries include the following:
 | LibGCL | GCL script language interpreter. | The equivalent library in the *Zone of the Enders* is named LibSCN. |
 | LibHZD | Collision and zone management library. | Renamed to "LibHZX" after presumably being overhauled during the development of *Metal Gear Solid 2*, though it remained "LibHZD" for both PlayStation 2 *Zone of the Enders* games and was moved into the game module for *Anubis: Zone of the Enders*. LibHZD was replaced with LibGEO in *Metal Gear Solid 3* onwards. Its name is short for "hazard." |
 | LibLA | 2D layout processing library, typically used for UI elements. | The equivalent library in *Anubis: Zone of the Enders* is LibSPR. |
-| LibMA | Common, multi-purpose mathematics functions. | The eqivalent library in both PlayStation 2 *Zone of the Enders* games is LibALG. LibGV in *Metal Gear Solid* seemed to fulfill this role. |
+| LibMA | Common, multi-purpose mathematics functions. | The equivalent library in both PlayStation 2 *Zone of the Enders* games is LibALG. LibGV in *Metal Gear Solid* seemed to fulfill this role. |
 | LibMC | Library for reading and writing save game and other files stored on PlayStation memory cards. |
 | LibMT | Motion processing library. LibMT also handles sound effect cues attached to animations. |
 | LibNT | Network connection library.| Possibly introduced in *Metal Gear Online* (2005). |
@@ -141,11 +147,17 @@ The user-level module primarily deals with implementing actors and other game-sp
 
 ## Source Tree
 
-Aside from the structure of the actual program, each project's source tree is patterned after a common model KCE Japan's programmers had established at some point. *Metal Gear Solid* is the first game with enough information retained throughout its various builds for these practices to be known and documented.
+Aside from the structure of the actual program, each project's source tree is patterned after a common model KCE Japan West's programmers established at some point. *Metal Gear Solid* is the first game with enough information retained throughout its various builds for these practices to be known and documented.
 
-The codebase for each project is split between two main directories: ``source``, which contains the vast majority of the game's code, and ``module`` which is where the MTS, sound, and third-party libraries reside. Each directory has a pair of subdirectories named ``include`` and ``lib`` which contain common headers and library archives respectively. ``source`` also includes a subdirectory named ``main`` which often containes a single source file that defines the program entry point (the ``main()`` function).
+The codebase for each project is split between two main directories.
+- ``source``: contains the majority of the game's code
+- ``module``: contains the MTS, sound, third-party, and other miscellaneous libraries
 
-User-level code is sorted into directories named after the programmer assigned to implement it. This is a common practice for Japanese game developers across the industry and can be seen in the codebases of various non-Konami games such as Grasshopper Manufacture's *Killer7* and SCE Japan Studio's *ICO*.
+Each contains a pair of subdirectories named ``include`` and ``lib``, which are used to store common headers and library archives respectively.
+
+The subdirectory ``source/main`` often contains a single source file that defines the program entry point (the ``main()`` function).
+
+User-level code is sorted into subdirectories named after the programmer assigned to implement it. Such naming is a common practice for Japanese game developers across the industry and can be observed in the codebases of various non-Konami games such as Grasshopper Manufacture's *Killer7* and SCE Japan Studio's *ICO*.
 
 There are two directory structures for ``source`` different games follow. The first can be observed in *Metal Gear Solid*, *beatmania APPEND 5thMix*, and *Zone of the Enders*.
 
@@ -156,7 +168,8 @@ mgs
 │  ├─include
 │  ├─lib
 │  ├─mts
-│  └─sound
+│  ├─sound
+│  └─zlibdec
 └─source
     ├─game
     ├─include
@@ -184,7 +197,8 @@ mgs
 │  ├─include
 │  ├─lib
 │  ├─mts
-│  └─sound
+│  ├─sound
+│  └─zlibdec
 └─source
     ├─game
     ├─include
@@ -205,9 +219,32 @@ mgs
         └─uehara
 ```
 
+### Library Archives
+
+Object code is compiled into library archives before being linked when building the full program. Each library or subdirectory of ``source/user`` corresponds to an archive file.
+
+For the above source tree samples, the following archives would be compiled:
+```
+module/lib/mts.a
+module/lib/sound.a
+module/lib/zlibdec.a
+source/lib/game.a
+source/lib/korekado.a
+source/lib/libdg.a
+source/lib/libfs.a
+source/lib/libgcl.a
+source/lib/libgv.a
+source/lib/libhzd.a
+source/lib/libmt.a
+source/lib/okajima.a
+source/lib/sonoyama.a
+source/lib/takabe.a
+source/lib/uehara.a
+```
+
 ### cdrom.img
 
-A directory named ``cdrom.img`` should be located somewhere within a game's project directory. This serves as the host path for running builds of a game from a host machine's hard disk drive or other media during development.
+A directory named ``cdrom.img`` serves as the host path for running builds of a game from a host machine's hard disk drive or other media during development.
 
 In the Windows port of *Metal Gear Solid 2: Substance* and *Metal Gear Arcade*, ``cdrom.img`` survived into the final builds of the games and serves as the root directory for game data.
 
@@ -215,7 +252,7 @@ The earliest appearance of ``cdrom.img`` can be found within the PlayStation ver
 
 ### Known Source Files & Paths
 
-The following lists are compilations of known source file paths that have been pulled from game data and/or executables:
+The following lists are compilations of known source file paths that have been collated from game data and/or executable code:
 - [Metal Gear Solid / Metal Gear Solid: Integral](path_mgs1psx.txt)
 - [Metal Gear Solid: Integral (Windows)](path_mgs1win.txt)
 - [Metal Gear Solid 2: Substance (Xbox)](path_mgs2xbox.txt)
@@ -230,11 +267,17 @@ The following lists are compilations of known source file paths that have been p
 - [Anubis: Zone of the Enders HD Edition](path_zoe2hd.txt)
 - [Anubis: Zone of the Enders MARS](path_zoe2mars.txt)
 
-**Note:** *Anubis: Zone of the Enders* has been edited somewhat from the information originally found within the game for the sake of clarity and completeness.
+**Note:** *Anubis: Zone of the Enders* has been edited somewhat from the information originally found within the game for the sake of clarity and completeness. For example paths have been expanded and original source files only listed in later ports of the game have been included.
 
 ## Source Control
 
-As mentioned in *The Document of Metal Gear Solid 2*, [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System) was used as the revision management system for the development of *Metal Gear Solid 2*.
+### CVS
+
+As mentioned in *The Document of Metal Gear Solid 2*, [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System) was used as the revision management system for the development of *Metal Gear Solid 2*. A ``.cvsignore`` file was included with the Windows port of *Metal Gear Solid 2: Substance* within the directory ``cdrom.img/modules``.
+
+Several CVS files were included in Anubis: Zone of the Enders HD Edition within the directory ``USRDIR/ZoE2/stage/CVS``.
+
+### StarTeam
 
 Silicon Knights is known to have used Borland [StarTeam
 ](https://en.wikipedia.org/wiki/StarTeam) to manage assets and possibly code during the development of *Metal Gear Solid: The Twin Snakes* as evidenced by the various StarTeam metadata files left on the discs of the retails builds of the game.

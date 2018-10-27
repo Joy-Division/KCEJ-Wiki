@@ -25,12 +25,12 @@ typedef struct _DPK_HEADER {
 	uint32 filecount;
 	uint32 length;
 	uint32 unknown;		// always 0x18
-	char padding[8];	// zero-filled
+	char   padding[8];	// zero-filled
 } DPK_HEADER;
 ```
 ```c
 typedef struct _DPK_ENTRY {
-	char name[12];
+	char   name[12];
 	uint32 offset;
 	uint32 length;
 	uint32 checksum;

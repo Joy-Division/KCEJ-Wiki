@@ -3,7 +3,6 @@ d:/mgs/src0226/onoda/jpeg/jpegcam.dat
 C:\link\source\okajima\CHAFGRND.C
 C:\link\source\takabe\jeep_liq\D_ACTION.C
 C:\link\source\takabe\jeep_liq\JLQ_ACT.C
-C:\link\source\takabe\jeep_liq\JLQ_ACT.C
 D:\link\source\animal\zako11e\ZK11EACT.C
 D:\link\source\takabe\jeep_emy\JGETHIN			// fragment, "D:\link\source" was missing, no end
 D:\link\source\takabe\PAPER.C

@@ -68,6 +68,7 @@ C:\mgs\source\chara\rope\dsmoke2.c
 C:\mgs\source\chara\rope\landing.c
 C:\mgs\source\chara\rope\pipe.c
 C:\mgs\source\chara\rope\rope.c
+C:\mgs\source\chara\snake\../snake_vr/sna_init.c
 C:\mgs\source\chara\snake\afterse.c
 C:\mgs\source\chara\snake\breath.c
 C:\mgs\source\chara\snake\shadow.c
@@ -104,6 +105,9 @@ C:\mgs\source\Enemy\kiken.c
 C:\mgs\source\Enemy\l_sight.c
 C:\mgs\source\Enemy\m_door.c
 C:\mgs\source\Enemy\meryl7.c
+C:\mgs\source\Enemy\minene.c
+C:\mgs\source\Enemy\mystery.c
+C:\mgs\source\Enemy\n_blood.c
 C:\mgs\source\Enemy\object.c
 C:\mgs\source\Enemy\searchli.c
 C:\mgs\source\Enemy\smoke.c
@@ -183,13 +187,13 @@ C:\mgs\source\Kojo\ninjalzr.c
 C:\mgs\source\Kojo\sstorm.c
 C:\mgs\source\LibDG\dgd.c
 C:\mgs\source\LibGV\gvd.c
+C:\mgs\source\MGS_Work___Win32_Demo0\mgsiDEMO.pdb
+C:\mgs\source\MGS_Work___Win32_Integral\mgsi.pdb
+C:\mgs\source\MGS_Work___Win32_VrOnly\mgsvr.pdb
 C:\mgs\source\Menu\countdwn.c
 C:\mgs\source\Menu\menuman.c
 C:\mgs\source\Menu\mload.c
 C:\mgs\source\Menu\pocket.c
-C:\mgs\source\MGS_Work___Win32_Demo0\mgsiDEMO.pdb
-C:\mgs\source\MGS_Work___Win32_Integral\mgsi.pdb
-C:\mgs\source\MGS_Work___Win32_VrOnly\mgsvr.pdb
 C:\mgs\source\nobu\present\present.c
 C:\mgs\source\nobu\vr\loadrep.c
 C:\mgs\source\nobu\vr_demo\paddemo2.c
@@ -403,6 +407,7 @@ C:\mgs\source\Takabe\telop.c
 C:\mgs\source\Takabe\tex_scrl.c
 C:\mgs\source\Takabe\tracktrp.c
 C:\mgs\source\Takabe\vib_edit.c
+C:\mgs\source\Takabe\viewdata.c
 C:\mgs\source\Takabe\voicesys.c
 C:\mgs\source\Takabe\water.c
 C:\mgs\source\Takabe\windcrcl.c

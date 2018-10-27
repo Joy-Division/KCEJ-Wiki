@@ -1,0 +1,13 @@
+/source/include/init.c
+C:\MGS\mgs2\mgs2x\MGS2GCN\mgso.plf
+C:\MGS\mgs2\mgs2x\MGS2GCN\mgso_pal.plf
+--------------------------------------------------
+c:\gdev\mgs\disk1
+c:\gdev\mgs\disk1\audio\banks
+c:\gdev\mgs\disk1\audio\stream
+c:\gdev\mgs\disk2
+c:\gdev\mgs\disk2\audio\banks
+c:\gdev\mgs\disk2\audio\stream
+c:\gdev\mgs\shared
+c:\gdev\mgs\shared\audio\banks
+c:\gdev\mgs\shared\audio\stream
